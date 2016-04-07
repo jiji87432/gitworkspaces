@@ -264,39 +264,6 @@ public class PayRollAction extends BaseAction {
      */
     public String payrollQuery() {
         return this.payrollBatchQuery();
-        /*if (!isLogin()) {
-            setMessage(login);
-            return ERROR;
-        }
-        HttpServletRequest req = ServletActionContext.getRequest();
-        QueryAgentBatchRequest request = new QueryAgentBatchRequest();
-        String merNo = req.getParameter("merNo");
-        request.setReqSysDate(new Date());
-        request.setFlowNo(SeqUtils.getUniqueID());
-        request.setOperSys(CommonConstants.BOSS_SYS_CODE);
-        request.setMerNo(merNo);
-        if (null == page) {
-            page = new Page();
-        }
-        try {
-            logger.info("代付批次查询请求DTO：{}", (null != request ? JSONObject.toJSONString(request) : request));
-            QueryAgentBatchResponse resp = agentTranFacade.queryAgentBatch(request);
-            logger.info("代付批次查询返回结果：{}", (null != resp ? JSONObject.toJSONString(resp) : resp));
-            if (null != resp && resp.getRespCode().equals(CommonConstants.PCS_SUCCESS_NO)) {
-                page = service.getList(resp.getBatchList(), resp.getTotalCount(), page);
-                return SUCCESS;
-            } else {
-                if (null != resp && null != resp.getRespCodeMemo()) {
-                    setMessage("<script>alert(\" " + resp.getRespCodeMemo() + "\");history.go(-1);</script>");
-                } else {
-                    setMessage("<script>alert(\"PCS系统返回错误，请联系管理员!\");history.go(-1);</script>");
-                }
-                return ERROR;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            return ERROR;
-        }*/
     }
 
     /**
