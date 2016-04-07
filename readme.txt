@@ -58,7 +58,7 @@ import com.zframework.system.service.IService;
 
 /**
  * 
- * <b>类说明：代发工资管理git测试hahahaha</b>
+ * <b>类说明：代发工资管理git测试Creating a new branch is quick</b>
  * 
  * <p>
  * <b>详细描述：</b>
