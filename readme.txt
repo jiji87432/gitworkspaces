@@ -58,7 +58,8 @@ import com.zframework.system.service.IService;
 
 /**
  *
- *Creating a new branch is quick AND simple. 
+ *Creating a new branch is quick AND simple.
+ Switched to a new branch 'dev'
  * <b>类说明：代发工资管理git测试Creating a new branch is quick</b>
  * 
  * <p>
